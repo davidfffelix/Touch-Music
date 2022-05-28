@@ -10,9 +10,17 @@ class MarimbaApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Container(),
+          child: Center(
+            child: TextButton(
+              onPressed: (){
+                final player = AudioCache(); // Executa o áudio dos arquivos locais
+                player.play('nota1.wav');
+              },
+              child: Text('Clique em mim!'),
+             ),
+            ),
+          ),
         ),
-      ),
-    );
+      );
   }
 }
