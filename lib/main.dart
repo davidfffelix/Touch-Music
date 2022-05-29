@@ -7,6 +7,7 @@ class MarimbaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
           child: Center(
@@ -51,6 +52,8 @@ class MarimbaApp extends StatelessWidget {
                 TextButton(
                   style: TextButton.styleFrom(
                     backgroundColor: Color(0xff212121),
+                    shape: StadiumBorder(),
+                    padding: EdgeInsets.all(12),
                   ),
                   onPressed: (){
                     final player = AudioCache();
