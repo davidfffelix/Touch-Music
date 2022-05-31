@@ -51,7 +51,7 @@ class MarimbaApp extends StatelessWidget {
 
                 TextButton(
                   style: TextButton.styleFrom(
-                    backgroundColor: Color(0xffdd2c00
+                    backgroundColor: Color(0xffff6d00
                     ),
                   ),
                   onPressed: (){
@@ -59,6 +59,30 @@ class MarimbaApp extends StatelessWidget {
                     player.play('nota4.wav');
                   },
                   child: Text('Clique em mim 4!'),
+                ),
+
+                TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Color(0xff6200ea
+                    ),
+                  ),
+                  onPressed: (){
+                    final player = AudioCache();
+                    player.play('nota5.wav');
+                  },
+                  child: Text('Clique em mim 5!'),
+                ),
+
+                TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Color(0xff757575
+                   ),
+                  ),
+                  onPressed: (){
+                      final player = AudioCache();
+                      player.play('nota6.wav');
+                  },
+                  child: Text('Clique em mim 6!'),
                 ),
 
                 TextButton(
