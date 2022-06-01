@@ -26,7 +26,6 @@ class MarimbaApp extends StatelessWidget {
                   onPressed: () {
                     playSound(1);
                   },
-                  child: Text('Clique em mim!'),
                 ),
 
                 TextButton(
@@ -37,7 +36,6 @@ class MarimbaApp extends StatelessWidget {
                   onPressed: (){
                     playSound(2);
                   },
-                  child: Text('Clique em mim 2!'),
                 ),
 
                 TextButton(
@@ -48,7 +46,6 @@ class MarimbaApp extends StatelessWidget {
                     onPressed: (){
                       playSound(3);
                     },
-                    child: Text('Clique em mim 3!'),
                 ),
 
                 TextButton(
@@ -59,7 +56,6 @@ class MarimbaApp extends StatelessWidget {
                   onPressed: (){
                     playSound(4);
                   },
-                  child: Text('Clique em mim 4!'),
                 ),
 
                 TextButton(
@@ -70,7 +66,6 @@ class MarimbaApp extends StatelessWidget {
                   onPressed: (){
                     playSound(5);
                   },
-                  child: Text('Clique em mim 5!'),
                 ),
 
                 TextButton(
@@ -81,7 +76,6 @@ class MarimbaApp extends StatelessWidget {
                   onPressed: (){
                     playSound(6);
                   },
-                  child: Text('Clique em mim 6!'),
                 ),
 
                 TextButton(
@@ -93,13 +87,6 @@ class MarimbaApp extends StatelessWidget {
                   onPressed: (){
                     playSound(7);
                   },
-                  child: Text('Teste',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
                 ),
               ],
             ),
