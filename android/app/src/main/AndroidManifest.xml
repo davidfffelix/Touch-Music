@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.marimba">
+    package="com.example.touch-music">
    <application
         android:label="Touch Music"
         android:name="${applicationName}"
