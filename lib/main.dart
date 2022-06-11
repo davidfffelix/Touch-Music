@@ -10,14 +10,14 @@ class TouchMusic extends StatelessWidget {
         .play('nota$numberSound.wav'); // Reproduz o arquivo de áudio escolhido
   }
 
-  Expanded createButton({required Color color, required int noteNumber}) {
+  Expanded criarBotao({required Color cor, required int numeroDaNota}) {
     return Expanded(
       child: TextButton(
         style: TextButton.styleFrom(
-          backgroundColor: color,
+          backgroundColor: cor,
         ),
         onPressed: () {
-          playSound(noteNumber);
+          playSound(numeroDaNota);
         },
         child: Container(),
       ),
@@ -33,13 +33,13 @@ class TouchMusic extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              createButton(color: Color(0xff1a237e), noteNumber: 1),
-              createButton(color: Color(0xffffff00), noteNumber: 2),
-              createButton(color: Color(0xff00e676), noteNumber: 3),
-              createButton(color: Color(0xffff3d00), noteNumber: 4),
-              createButton(color: Color(0xff6a1b9a), noteNumber: 5),
-              createButton(color: Color(0xfffafafa), noteNumber: 6),
-              createButton(color: Color(0xffd50000), noteNumber: 7),
+              criarBotao(cor: Color(0xff1a237e), numeroDaNota: 1),
+              criarBotao(cor: Color(0xffffff00), numeroDaNota: 2),
+              criarBotao(cor: Color(0xff00e676), numeroDaNota: 3),
+              criarBotao(cor: Color(0xffff3d00), numeroDaNota: 4),
+              criarBotao(cor: Color(0xff6a1b9a), numeroDaNota: 5),
+              criarBotao(cor: Color(0xfffafafa), numeroDaNota: 6),
+              criarBotao(cor: Color(0xffd50000), numeroDaNota: 7),
             ],
           ),
         ),
