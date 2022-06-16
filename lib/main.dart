@@ -33,7 +33,7 @@ class TouchMusic extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              criarBotao(cor: Color(0xff1a237e), numeroDaNota: 1),
+              criarBotao(cor: Color(0xff1a237e), numeroDaNota: 1), 
               criarBotao(cor: Color(0xffffff00), numeroDaNota: 2),
               criarBotao(cor: Color(0xff00e676), numeroDaNota: 3),
               criarBotao(cor: Color(0xffff3d00), numeroDaNota: 4),
